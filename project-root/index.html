@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modularized Map App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <img src="https://unitac.un.org/sites/unitac.un.org/files/general/unitac_logo.png" alt="Unitac Logo" class="logo">
+    </div>
+    <div class="header-right">
+      <button id="geojson-btn" class="top-btn" title="Upload GeoJSON">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/upload.png" alt="Upload GeoJSON">
+      </button>
+      <input type="file" id="geojson-input" style="display:none">
+      <button id="faq-btn" class="top-btn" title="FAQ">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/info.png" alt="FAQ Icon">
+      </button>
+      <button id="contact-btn" class="top-btn" title="Contact Us">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/mail.png" alt="Contact Icon">
+      </button>
+    </div>
+  </header>
+
+  <!-- Map Container -->
+  <div class="map-container">
+    <div id="map"></div>
+    <div class="spinner" style="display: none;">Loading...</div>
+
+    <!-- Popup Content Panel -->
+    <div id="popup-content" class="popup-content">
+      <div class="popup-inner">
+        <span id="popup-close" class="popup-close">&times;</span>
+        <div id="popup-content-area">
+          <!-- Dynamic content from clicked building will be displayed here -->
+        </div>
+
+        <!-- Page navigation for popup -->
+        <div class="page-navigation">
+          <button id="prev-btn" class="nav-btn"><span>&lt;</span></button>
+          <span id="page-number">1</span>
+          <button id="next-btn" class="nav-btn"><span>&gt;</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="bottom-bar">
+    <p class="slogan">Go green with renewable energy and select the solar panels that fit your need!<br>© 2024 UNITAC Hamburg</p>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Custom JS files -->
+  <script src="js/map.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/geojson.js"></script>
+</body>
+</html>
