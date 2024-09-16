@@ -1,0 +1,24 @@
+/* Map container styles */
+.map-container {
+  flex-grow: 1;
+  padding: 10px;
+  position: relative;
+}
+
+#map {
+  flex-grow: 1; /* Ensures map fills the container */
+  width: 100%; /* Ensure full width */
+  height: 100%;
+  border-radius: 20px;
+  border: 2px solid #ffdd21;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #00b3db;
+  display: none;
+}

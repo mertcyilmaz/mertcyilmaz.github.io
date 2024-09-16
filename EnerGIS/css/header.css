@@ -1,0 +1,59 @@
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffdd21;
+  padding: 20px;
+  position: relative;
+  height: 30px; /* Fixed height for top bar */
+}
+
+.header-left {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.header-right {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Button styles for the top bar */
+.top-btn {
+  background-color: #00b3db;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.1s, opacity 0.1s;
+  margin-left: 10px;
+}
+
+.top-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.top-btn:hover {
+  background-color: #008bb5;
+  opacity: 0.9;
+}
+
+.top-btn:active {
+  transform: scale(0.98);
+  opacity: 0.8;
+}

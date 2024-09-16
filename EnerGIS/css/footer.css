@@ -1,0 +1,12 @@
+/* Footer styles */
+.bottom-bar {
+  background-color: #ff9524;
+  text-align: center;
+  padding: 15px 0;
+  height: 30px; /* Fixed height for bottom bar */
+}
+
+.slogan {
+  color: #fff;
+  font-size: 12px;
+}
