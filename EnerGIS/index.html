@@ -3,19 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modularized Map App</title>
-  <!-- Global CSS -->
+  <title>EnerGIS</title>
   <link rel="stylesheet" href="css/global.css">
-  <!-- Component-specific CSS files -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/map.css">
   <link rel="stylesheet" href="css/popup.css">
   <link rel="stylesheet" href="css/footer.css">
-  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
     <div class="header-left">
       <img src="https://unitac.un.org/sites/unitac.un.org/files/general/unitac_logo.png" alt="Unitac Logo" class="logo">
@@ -33,21 +29,17 @@
       </button>
     </div>
   </header>
-
-  <!-- Map Container -->
+  
   <div class="map-container">
     <div id="map"></div>
     <div class="spinner" style="display: none;">Loading...</div>
 
-    <!-- Popup Content Panel -->
     <div id="popup-content" class="popup-content">
       <div class="popup-inner">
         <span id="popup-close" class="popup-close">&times;</span>
         <div id="popup-content-area">
-          <!-- Dynamic content from clicked building will be displayed here -->
         </div>
 
-        <!-- Page navigation for popup -->
         <div class="page-navigation">
           <button id="prev-btn" class="nav-btn"><span>&lt;</span></button>
           <span id="page-number">1</span>
@@ -57,14 +49,11 @@
     </div>
   </div>
 
-  <!-- Footer -->
   <div class="bottom-bar">
     <p class="slogan">Go green with renewable energy and select the solar panels that fit your need!<br>© 2024 UNITAC Hamburg</p>
   </div>
 
-  <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <!-- Custom JS files -->
   <script src="js/map.js"></script>
   <script src="js/popup.js"></script>
   <script src="js/geojson.js"></script>
